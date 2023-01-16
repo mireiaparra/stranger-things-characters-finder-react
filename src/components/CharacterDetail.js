@@ -10,6 +10,7 @@ const CharacterDetail = (props) => {
   const params = useParams();
   const characterFound = props.findCharacter(params.characterId);
 
+
   if (characterFound === undefined) {
     return <NotFound />;
   } else {

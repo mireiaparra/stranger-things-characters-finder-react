@@ -95,8 +95,8 @@ function App() {
   };
 
   const findCharacter = (id) => {
-    return dataCharacters.find((character) => character.id === parseInt(id));
-  };
+    return dataCharacters.find((character) => character.id === (id));
+  };                                                                    
 
   const getPlanets = () => {
     const characterPlanets = dataCharacters.map(
