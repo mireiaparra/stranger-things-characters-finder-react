@@ -12,7 +12,7 @@ function App() {
   // VARIABLES ESTADO
   const [dataCharacters, setDataCharacters] = useState([]);
   const [filterByName, setFilterByName] = useState("");
-  const [filterBySpecies, setFilterBySpecies] = useState("default");
+  const [filterByGender, setFilterByGender] = useState("default");
   const [filterByPlanet, setFilterByPlanet] = useState([]);
   const [sortBy, setSortBy] = useState("default");
 
@@ -27,12 +27,12 @@ function App() {
   const handleFilterName = (value) => {
     setFilterByName(value);
   };
-  const handleFilterSpecies = (value) => {
-    setFilterBySpecies(value);
+  const handleFilterGender = (value) => {
+    setFilterByGender(value);
   };
   const handleReset = (ev) => {
     ev.preventDefault();
-    setFilterBySpecies("default");
+    setFilterByGender("default");
     setFilterByName("");
     setFilterByPlanet([]);
     setSortBy("default");
@@ -58,9 +58,9 @@ function App() {
       character.name.toLowerCase().includes(filterByName.toLowerCase())
     )
     .filter((character) =>
-      filterBySpecies === "default" || filterBySpecies === "all"
+      filterByGender === "default" || filterByGender === "all"
         ? true
-        : character.species === filterBySpecies
+        : character.gender === filterByGender
     )
     .filter((character) => {
       if (filterByPlanet.length === 0) {
@@ -122,8 +122,8 @@ function App() {
                 <Filters
                   handleFilterName={handleFilterName}
                   filterByName={filterByName}
-                  handleFilterSpecies={handleFilterSpecies}
-                  filterBySpecies={filterBySpecies}
+                  handleFilterGender={handleFilterGender}
+                  filterByGender={filterByGender}
                   handleReset={handleReset}
                   planets={getPlanets()}
                   handleFilterPlanet={handleFilterPlanet}

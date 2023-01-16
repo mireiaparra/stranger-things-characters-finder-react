@@ -1,6 +1,6 @@
 import FilterByPlanet from "./FilterByPlanet";
 import FilterByName from "./FilterByName";
-import FilterBySpecies from "./FilterBySpecies";
+import FilterByGender from "./FilterByGender";
 import SortBy from "./SortBy";
 
 const Filters = (props) => {
@@ -14,9 +14,9 @@ const Filters = (props) => {
           handleFilterName={props.handleFilterName}
           filterByName={props.filterByName}
         />
-        <FilterBySpecies
-          handleFilterSpecies={props.handleFilterSpecies}
-          filterBySpecies={props.filterBySpecies}
+        <FilterByGender
+          handleFilterGender={props.handleFilterGender}
+          filterByGender={props.filterByGender}
         />
         <FilterByPlanet
           planets={props.planets}

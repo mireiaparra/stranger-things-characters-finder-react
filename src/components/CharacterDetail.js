@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import arrow from "../images/arrow.png";
-import alien from "../images/alien.png";
-import human from "../images/human.png";
+import female from "../images/female.png";
+import male from "../images/male.png";
 import NotFound from "./NotFound";
 import dead from "../images/dead.png";
 import alive from "../images/alive.png";
@@ -14,11 +14,11 @@ const CharacterDetail = (props) => {
   if (characterFound === undefined) {
     return <NotFound />;
   } else {
-    const returnSpecies = () => {
-      if (characterFound.species === "Alien") {
-        return alien;
+    const returnGender = () => {
+      if (characterFound.gender === "Female") {
+        return female;
       } else {
-        return human;
+        return male;
       }
     };
 
@@ -45,8 +45,8 @@ const CharacterDetail = (props) => {
               <p className="detail__p">Especie:</p>
               <img
                 className="list__icon"
-                src={`${returnSpecies()}`}
-                alt={characterFound.species}
+                src={`${returnGender()}`}
+                alt={characterFound.gender}
               />
             </div>
             <div className="detail__text">

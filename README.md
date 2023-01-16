@@ -1,7 +1,7 @@
 # Module 3: Mireia Maldonado Parra's final project
 ![Rick & Morty](./src/images/notFound.jpg)
 
-This project is a web page with a list of Rick and Morty characters. You can filter them by name, species or planet. You can also sort them by name, relevance or the number of episodes in which they appear. 
+This project is a web page with a list of Rick and Morty characters. You can filter them by name, gender or planet. You can also sort them by name, relevance or the number of episodes in which they appear. 
 
 The project has been built with React, HTML & Sass.
 

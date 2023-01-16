@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import alien from "../images/alien.png";
-import human from "../images/human.png";
+import female from "../images/female.png";
+import male from "../images/male.png";
 const CharacterItem = (props) => {
-  const returnSpecies = () => {
-    if (props.character.species === "Alien") {
-      return alien;
+  const returnGender = () => {
+    if (props.character.gender === "Female") {
+      return female;
     } else {
-      return human;
+      return male;
     }
   };
   return (
@@ -21,8 +21,8 @@ const CharacterItem = (props) => {
           <h2 className="list__name">{props.character.name}</h2>
           <img
             className="list__icon"
-            src={`${returnSpecies()}`}
-            alt={props.character.species}
+            src={`${returnGender()}`}
+            alt={props.character.gender}
           />
         </article>
       </li>
