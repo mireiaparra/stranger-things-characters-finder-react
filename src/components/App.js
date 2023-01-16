@@ -16,14 +16,14 @@ function App() {
   const [filterByPlanet, setFilterByPlanet] = useState([]);
   const [sortBy, setSortBy] = useState("default");
 
-  // USEEFFECT
+  // // USEEFFECT
   useEffect(() => {
     getDataFromApi().then((cleanData) => {
       setDataCharacters(cleanData);
     });
-  }, []);
+  }, );
 
-  // FUNCIONES HANDLER
+  //FUNCIONES HANDLER
   const handleFilterName = (value) => {
     setFilterByName(value);
   };
@@ -52,7 +52,7 @@ function App() {
     }
   };
 
-  // FUNCIONES Y VARIABLES QUE AYUDEN A RENDERIZAR HTML
+  //FUNCIONES Y VARIABLES QUE AYUDEN A RENDERIZAR HTML
   const charactersFiltered = dataCharacters
     .filter((character) =>
       character.name.toLowerCase().includes(filterByName.toLowerCase())
@@ -137,7 +137,7 @@ function App() {
                 />
               </>
             }
-          ></Route>
+          ></Route> 
 
           <Route
             path="/character/:characterId"

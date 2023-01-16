@@ -1,16 +1,16 @@
 const getDataFromApi = () => {
-    return fetch("https://rickandmortyapi.com/api/character")
+    return fetch("https://stranger-things-api.fly.dev/api/v1/characters")
     .then((response) => response.json())
     .then((data) => {
-        const cleanData = data.results.map((character) => {
+        const cleanData = data.map((character) => {
             return {
-                id: character.id,
-                image: character.image,
-                name: character.name,
-                species: character.species,
-                planet: character.origin.name,
-                episodes: character.episode.length,
-                status: character.status
+                id: character._id,
+                image: character.photo ? character.photo : '',
+                name: character.name ? character.name : '',
+                species: character.gender ? character.gender : '',
+                planet: character.residence[0],
+                episodes: character.appearsInEpisodes.length,
+                status: character.status ? character.status : '',
             }
         })
         return cleanData;
