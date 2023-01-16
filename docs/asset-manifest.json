@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.a95a7d4f.css",
-    "main.js": "./static/js/main.55b30c1f.js",
+    "main.css": "./static/css/main.d9cd0440.css",
+    "main.js": "./static/js/main.1c321c12.js",
     "static/media/Type Machine.ttf": "./static/media/Type Machine.6326e0da1f05f14b5262.ttf",
+    "static/media/defaultImage.png": "./static/media/defaultImage.c0022f72864bd25a6cfe.png",
     "static/media/background.jpg": "./static/media/background.4fa67c67b85613f37004.jpg",
-    "static/media/logo.png": "./static/media/logo.de3062ed18fb4232c53c.png",
     "static/media/unknown.png": "./static/media/unknown.ab5bf712455e6a198524.png",
+    "static/media/logo.png": "./static/media/logo.de6a6f8f7ac6673eb255.png",
     "static/media/notFound.jpg": "./static/media/notFound.b4418ca6575793091d8c.jpg",
-    "static/media/alien.png": "./static/media/alien.531d2d45c535d63ec64c.png",
     "static/media/GrinchedRegular.otf": "./static/media/GrinchedRegular.bc1058eedc3a3d230300.otf",
-    "static/media/human.png": "./static/media/human.23e0076840d2e9162e89.png",
+    "static/media/male.png": "./static/media/male.00f2364c34d99d07aa74.png",
     "static/media/alive.png": "./static/media/alive.f77819c97fbd45f28fa6.png",
+    "static/media/female.png": "./static/media/female.3d8e5b55e457ad773ae0.png",
     "static/media/arrow.png": "./static/media/arrow.49b33eadd94683b1e2ef.png",
     "index.html": "./index.html",
-    "main.a95a7d4f.css.map": "./static/css/main.a95a7d4f.css.map",
-    "main.55b30c1f.js.map": "./static/js/main.55b30c1f.js.map"
+    "main.d9cd0440.css.map": "./static/css/main.d9cd0440.css.map",
+    "main.1c321c12.js.map": "./static/js/main.1c321c12.js.map"
   },
   "entrypoints": [
-    "static/css/main.a95a7d4f.css",
-    "static/js/main.55b30c1f.js"
+    "static/css/main.d9cd0440.css",
+    "static/js/main.1c321c12.js"
   ]
 }
