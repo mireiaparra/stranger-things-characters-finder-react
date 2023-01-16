@@ -42,7 +42,7 @@ const CharacterDetail = (props) => {
           <div className="detail__allText">
             <h2 className="detail__h2">{characterFound.name}</h2>
             <div className="detail__text">
-              <p className="detail__p">Especie:</p>
+              <p className="detail__p">Género:</p>
               <img
                 className="list__icon"
                 src={`${returnGender()}`}
@@ -50,7 +50,7 @@ const CharacterDetail = (props) => {
               />
             </div>
             <div className="detail__text">
-              <p className="detail__p">Planeta: </p>
+              <p className="detail__p">Residencia: </p>
               <p>{characterFound.planet}</p>
             </div>
             <div className="detail__text">
