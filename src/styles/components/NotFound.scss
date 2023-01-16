@@ -1,0 +1,14 @@
+.notFound {
+  background-image: url("../../images/notFound.jpg");
+  height: 70vh;
+  &__article {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    color: white;
+    font-size: 2rem;
+    padding-top: 60px;
+  }
+}

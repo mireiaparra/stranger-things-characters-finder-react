@@ -1,0 +1,72 @@
+.form {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    color: white;
+    font-size: 1.3rem;
+    &--checkbox {
+      font-size: 1.2rem;
+      color: rgba(90, 231, 240, 1);
+    }
+  }
+
+  &__input {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: rgba(90, 231, 240, 1);
+    border: solid 1px rgba(90, 231, 240, 1);
+    background-color: black;
+
+    &::placeholder {
+      color: rgba(90, 230, 240, 0.308);
+    }
+
+    &--checkbox:checked + label {
+      outline: 2px solid rgba(90, 231, 240, 1);
+      background: black;
+    }
+  }
+
+  &__select {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    padding: 2px 15px;
+    cursor: pointer;
+    border: solid 1px rgba(90, 231, 240, 1);
+    background-color: black;
+    color: rgba(90, 231, 240, 1);
+  }
+
+  &__div--checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  &__reset {
+    font-size: 1.1rem;
+    border: solid 1px rgba(90, 231, 240, 1);
+    border-radius: 5%;
+    padding: 3px 15px;
+    color: rgba(90, 231, 240, 1);
+    background-color: black;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      background-color: rgba(90, 231, 240, 1);
+      border: solid 1px black;
+      transform: scale(1.3);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.detail {
+  &__article {
+    background-color: rgb(108, 134, 134);
+    border-radius: 3%;
+    color: white;
+    align-items: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    padding: 20px 25px 35px;
+    position: relative;
+    transform: translateX(-50%);
+    box-shadow: 0 0 100px rgba(90, 231, 240, 1);
+  }
+
+  &__img {
+    width: 10rem;
+    border: 3px dashed rgba(90, 230, 240, 0.65);
+    padding: 12px;
+  }
+
+  &__h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "grinched";
+    letter-spacing: 5px;
+    color: rgba(90, 230, 240, 0.65);
+    text-align: center;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 7px;
+  }
+
+  &__p {
+    font-size: 1.1rem;
+    color: rgb(219, 242, 255);
+  }
+
+  &__episodes {
+    margin-right: 47px;
+  }
+  &__arrow {
+    width: 60px;
+    bottom: 0px;
+    position: absolute;
+    left: auto;
+    padding: 6px;
+    right: 8px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .detail {
+    &__article {
+      flex-direction: row;
+      justify-content: space-evenly;
+      top: 95px;
+    }
+    &__img {
+      width: 13rem;
+    }
+
+    &__allText {
+      margin-left: 18px;
+    }
+
+    &__arrow {
+      right: 9px;
+      padding: 4px;
+      bottom: 7px;
+    }
+  }
+}
